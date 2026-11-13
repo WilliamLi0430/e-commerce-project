@@ -10,7 +10,14 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+
 }
 .container p {
   font-size: 3rem;
+}
+.container button {
+  background-color: rgb(102, 170, 233);
+  width: 150px;
+  height: 70px;
+  text-align: center;
 }
