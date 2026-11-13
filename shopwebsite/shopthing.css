@@ -1,0 +1,16 @@
+.card {
+  background-color: rgb(41, 145, 243);
+  width: 350px;
+  height: 450px;
+  text-align: center; 
+  margin: 2rem;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.container p {
+  font-size: 3rem;
+}
