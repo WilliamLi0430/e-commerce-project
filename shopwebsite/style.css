@@ -1,0 +1,100 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgba(128, 197, 240, 0.8), rgba(4, 54, 87, 0.8));
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ffffff;
+}
+.hero-content {
+    font: 1em sans-serif;
+    font-size: 5rem;
+    text-shadow: 0 3px 4px #000000;
+}
+.hero h1{
+    font-size: 7rem;
+    text-shadow: 6px 8px rgba(0, 0, 0, 0.4);
+}
+.hero p{
+    font-size: 2.4rem;
+    text-shadow: 3px 4px rgba(0, 0, 0, 0.4);
+}
+.card {
+  background-color: rgb(41, 145, 243);
+  border-radius: 24px;
+  width: 350px;
+  height: 440px;
+  text-align: center; 
+  margin: 2rem;
+}
+.card button {
+  width: 90px;
+  height: 30px;
+}
+.page-switcher input[type="radio"] {
+  display: none;
+}
+.page-switcher .content {
+  display: none;
+  padding: 20px;
+  border: 1px solid #979595;
+  margin-top: 10px;
+}
+#tab1:checked ~ .page-1,
+#tab2:checked ~ .page-2,
+#tab3:checked ~ .page-3,
+#tab4:checked ~ .page-4 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+#tab1:checked ~ .controls label[for="tab1"],
+#tab2:checked ~ .controls label[for="tab2"],
+#tab3:checked ~ .controls label[for="tab3"],
+#tab4:checked ~ .controls label[for="tab4"] {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+.page-btn {
+  cursor: pointer; /* Shows hand icon on hover */
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: inline-block;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.container p {
+  font-size: 3rem;
+}
+.content.page-4 {
+  text-align: center;
+  display: flex;
+}
+.coupontitle {
+  height: 16rem;
+}
+#coupon {
+  display: flex;
+  width: 100vh;
+  height: 20vh;
+}

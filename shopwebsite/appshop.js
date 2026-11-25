@@ -11,12 +11,20 @@ function inject(item) {
 }
 
 //mass adding event listeners
-const buttons = document.querySelectorAll("button");
+/* const buttons = document.querySelectorAll("button");
 buttons.forEach((buttons) => 
   buttons.addEventListener("click", function (event) {
     console.log(event.target.closest(".card").getAttribute("data-item"));
   })
-)
+) */
+
+document.querySelector("form").addEventListener("submit", function(event) {
+  event.preventDefault();
+  console.log("submitted form");
+  let x = document.querySelector("#coupon");
+  console.log(x.value);
+  x.value = "";
+});
 
 //make 1 html card, comment it out
 //select the container
